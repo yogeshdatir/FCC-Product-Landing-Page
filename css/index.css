@@ -1,0 +1,86 @@
+/* I’ll use a mobile-first approach and start styling this list as a vertical navigation so it will look good on phones and smaller tablets. */
+html,body {
+  margin: 0;
+  padding: 0;
+  background-color: aquamarine;
+}
+#header {
+  position: fixed; /* Set the navbar to fixed position */
+  height: auto;
+  width: 100%; /* Full width */
+  top: 0; /* Position the navbar at the top of the page */
+}
+.nav {
+  background-color:blanchedalmond;
+  text-align: center;
+}
+.logo-img {
+  width: 60px;
+}
+.nav ul {
+  list-style: none; /* removes list properties */ 
+  background-color: blanchedalmond;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+/* typography */
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+/* turn off the underlines and make the text white in the links. */
+.nav a {
+  text-decoration: none;
+  color:brown;
+  /*a little transition effect on the hover*/
+  transition: .3s background-color;
+}
+/*to make the color different when we hover over the link.*/
+.nav a:hover {
+  background-color: chartreuse;
+}
+.nav a.active {
+  background-color: darkturquoise;
+  color: #444;
+  /* to stop hover effect */
+  cursor: default;
+}
+@media screen and (min-width: 600px) {
+  .logo-img {
+    margin: 2px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* to position navlinks to right */
+  .nav ul {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .nav li {
+    width: 150px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+  .nav li {
+    display: inline-block; /* gets all li elements in one row */
+    margin-right: -4px;
+  }
+  /* This is 2nd method to make nav horizontal.
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }*/
+}
