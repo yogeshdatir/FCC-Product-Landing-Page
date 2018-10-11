@@ -8,21 +8,65 @@
       <nav class="nav" id="nav-bar">
         <a class="logo-link"><img class="logo-img" id="header-img" src="http://www.honeywebsolutions.com/images/logo.png"></a>
         <ul>
-          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li class="active"><a class="nav-link" href="#home">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <p> To know about this tutorial in details: <a href="http://css-snippets.com/simple-horizontal-navigation/"> Click here... </a></p>
       <section id="home">
+        <div class="home">
+        <div class="intro">
+          <h2>The new native</h3>
+          <p>Extend your GitHub workflow beyond your browser with GitHub Desktop, completely redesigned with Electron. Get a unified cross-platform experience that’s completely open source and ready to customize.</p>
+        </div>
+        <div class="form-container">
+          <form id="form" action="https://www.freecodecamp.com/email-submit" align=center>
+            <legend><h2>Get updates in your inbox every week</h2></legend>
+            <input id="name" name="name" type="text" placeholder="Full Name">
+            <input id="email" name="email" type="email" placeholder="E-mail">
+            <input id="submit" type="submit">
+          </form>
+        </div>
+        </div>
       </section>
       <section id="about">
+        <h2>Here's why you should use Git?</h2>
+        <p><b>Git</b> is a version control system. For example, if you have a file on which you’ve been working on and reworking for a long time, all the versions of it are saved in Git, and you can easily get back to every version.<br><br>
+          <b>What is it for?</b><br><br>
+          The version control system has the following benefits:<br> </p>
+          <ul>
+            <li>You have access to all versions of all files in Git repository at any time, it’s almost impossible to lose any part of a code.</li>
+
+            <li>Multiple developers can work on one project at the same time without interfering with each other, and without fear of losing any changes made by a colleague. In Git, the possibilities of collaborative work are unlimited.</li>
+        </ul>
+          <p>You will have to use Git every day, and this is a tool you should have a perfect command of.
+            <br><br>
+            Be sure to sign up on GitHub or Bitbucket. These services offer great manuals on how to start working with remote repositories. I like bitbucket for the possibility of creating unlimited number of private repositories. However, in terms of all other characteristics, GitHub is way ahead of bitbucket, and has turned into the standard and Mecca of the whole open source community.</p>
+        <iframe id="video" width="853" height="480" src="https://www.youtube.com/embed/SWYqp7iY_Tc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </section>
-      <section id="contact">
+      <section id="pricing">
+        <br><br>
+        <div class="pricing">
+          <div class="developer">
+            <div><h3>Developer</h3></div>
+            <div><h1>$7</h1></div>
+          </div>
+          <div class="team">
+            <div><h3>Team</h3></div>
+            <div><h1>$9</h1></div>
+          </div>
+          <div class="cloud">
+            <div><h3>Business Cloud</h3></div>
+            <div><h1>$21</h1></div>
+          </div>
+        </div>
       </section>
     </main>
+    <footer>
+    </footer>
   </body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

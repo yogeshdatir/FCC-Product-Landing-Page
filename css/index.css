@@ -3,14 +3,12 @@ html,body {
   margin: 0;
   padding: 0;
   background-color: aquamarine;
-}
-#header {
-  position: fixed; /* Set the navbar to fixed position */
-  height: auto;
-  width: 100%; /* Full width */
-  top: 0; /* Position the navbar at the top of the page */
+  margin-bottom: 15px;
 }
 .nav {
+  position: fixed; /* Set the navbar to fixed position */
+  width: 100%; /* Full width */
+  top: 0; /* Position the navbar at the top of the page */
   background-color:blanchedalmond;
   text-align: center;
 }
@@ -40,15 +38,63 @@ html,body {
   transition: .3s background-color;
 }
 /*to make the color different when we hover over the link.*/
-.nav a:hover {
+.nav li:hover {
   background-color: chartreuse;
 }
-.nav a.active {
+.nav li.active {
   background-color: darkturquoise;
   color: #444;
   /* to stop hover effect */
   cursor: default;
 }
+main {
+  margin: 190px 15px 0px 15px;
+}
+.intro {
+  text-align: center; 
+}
+.form-container {
+  width: 100%;
+  background-color: azure;
+}
+form {
+  padding: 5px;
+  padding-bottom: 25px;
+}
+iframe {
+  width: 100%;
+}
+.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pricing > div {
+    border: solid 1px black;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+  }
+  .developer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid 2px black;
+  }
+  .team div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid 2px black;
+  }
+  .cloud > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid 2px black;
+  }
+
 @media screen and (min-width: 600px) {
   .logo-img {
     margin: 2px;
@@ -56,7 +102,6 @@ html,body {
   .nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
   }
   /* to position navlinks to right */
   .nav ul {
@@ -74,6 +119,27 @@ html,body {
     display: inline-block; /* gets all li elements in one row */
     margin-right: -4px;
   }
+  iframe {
+    display: block;
+    margin: 0 auto;
+  }
+  .pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .pricing > div {
+    border: solid 1px black;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+  }
+  .developer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   /* This is 2nd method to make nav horizontal.
   .nav li {
     float: left;
@@ -83,4 +149,8 @@ html,body {
     width: 600px;
     margin: 0 auto;
   }*/
+  
+  main {
+    margin-top: 65px;
+  }
 }
